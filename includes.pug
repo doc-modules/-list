@@ -1,1 +1,8 @@
 include _list
+
+mixin _list_test()
+    include ../navbar/includes
+    header
+        +_list
+            +_list__li Первая
+            +_list__li Вторая

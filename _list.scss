@@ -1,14 +1,30 @@
-.list {
+$b: ".list";
 
-  display: flex;
+#{$b} {
 
-  &__li {
+  #{$b}__li {
     display: inline-block;
   }
 
   
 }
 
-.list.list--vertikal{
+#{$b}#{$b}--row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+
+#{$b}#{$b}--jsb {
+  justify-content: space-between;
+}
+
+#{$b}#{$b}--vertical-middle {
+
+  align-content: center;
+  align-items: center;
 
 }

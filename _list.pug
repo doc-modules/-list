@@ -5,10 +5,3 @@ mixin _list()
 mixin _list__li()
     +e.LI.li&attributes(attributes)
        block
-
-mixin test()
-    include ../navbar/includes
-    header
-        +_list
-            +_list__li Первая
-            +_list__li Вторая
